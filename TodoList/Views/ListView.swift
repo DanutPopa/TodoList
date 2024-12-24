@@ -20,6 +20,7 @@ struct ListView: View {
                 ListRowView(title: item)
             }
         }
+        .listStyle(.plain)
         .navigationTitle("Todo List 📝")
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -28,7 +29,7 @@ struct ListView: View {
             
             ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink("Add") {
-                    Text("Destination")
+                    AddView()
                 }
             }
         }
