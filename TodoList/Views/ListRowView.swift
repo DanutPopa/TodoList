@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ListRowView: View {
-    
     let item: ItemModel
     
     var body: some View {
@@ -24,5 +23,4 @@ struct ListRowView: View {
 
 #Preview {
     ListRowView(item: .exampleItem)
-        .previewLayout(.sizeThatFits)
 }

@@ -8,38 +8,40 @@
 import SwiftUI
 
 struct ListView: View {
-    @State private var items: [ItemModel] = [
-        ItemModel(title: "This is the first title!", isCompleted: false),
-        ItemModel(title: "This is the second", isCompleted: true),
-        ItemModel(title: "Third!", isCompleted: false)
-    ]
+    @StateObject private var listViewModel = ListViewModel()
     
     var body: some View {
-        List {
-            ForEach(items) { item in
-                ListRowView(item: item)
+        NavigationStack {
+            List {
+                ForEach(listViewModel.items) { item in
+                    ListRowView(item: item)
+                        .onTapGesture {
+                            withAnimation(.linear) {
+                                listViewModel.updateItem(item: item)
+                            }
+                        }
+                }
+                .onDelete(perform: listViewModel.deleteItem)
+                .onMove(perform: listViewModel.moveItem)
             }
-        }
-        .listStyle(.plain)
-        .navigationTitle("Todo List 📝")
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                EditButton()
-            }
-            
-            ToolbarItem(placement: .topBarTrailing) {
-                NavigationLink("Add") {
-                    AddView()
+            .listStyle(.plain)
+            .navigationTitle("Todo List 📝")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    EditButton()
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink("Add") {
+                        AddView()
+                    }
                 }
             }
         }
+        .environmentObject(listViewModel)
     }
 }
 
 #Preview {
-    NavigationStack {
-        ListView()
-    }
+    ListView()
 }
-
-
