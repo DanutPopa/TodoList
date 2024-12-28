@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C05204E2D1C035A00CCD278 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05204D2D1C035A00CCD278 /* ItemModel.swift */; };
 		0C0520512D1CAFAF00CCD278 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0520502D1CAFAF00CCD278 /* ListViewModel.swift */; };
+		0C8E36232D1EFD3000592D11 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8E36222D1EFD3000592D11 /* NoItemsView.swift */; };
 		0CECE9D02D1B382E0056F22F /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECE9CF2D1B382E0056F22F /* TodoListApp.swift */; };
 		0CECE9D22D1B382E0056F22F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECE9D12D1B382E0056F22F /* ListView.swift */; };
 		0CECE9D42D1B38310056F22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CECE9D32D1B38310056F22F /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0C05204D2D1C035A00CCD278 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		0C0520502D1CAFAF00CCD278 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		0C8E36222D1EFD3000592D11 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		0CECE9CC2D1B382E0056F22F /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CECE9CF2D1B382E0056F22F /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		0CECE9D12D1B382E0056F22F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				0CECE9D12D1B382E0056F22F /* ListView.swift */,
+				0C8E36222D1EFD3000592D11 /* NoItemsView.swift */,
 				0CECE9E02D1B3F9B0056F22F /* ListRowView.swift */,
 				0CECE9E22D1B446C0056F22F /* AddView.swift */,
 			);
@@ -178,6 +181,7 @@
 				0C0520512D1CAFAF00CCD278 /* ListViewModel.swift in Sources */,
 				0CECE9D22D1B382E0056F22F /* ListView.swift in Sources */,
 				0CECE9D02D1B382E0056F22F /* TodoListApp.swift in Sources */,
+				0C8E36232D1EFD3000592D11 /* NoItemsView.swift in Sources */,
 				0CECE9E12D1B3F9C0056F22F /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
